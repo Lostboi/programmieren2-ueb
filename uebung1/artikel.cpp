@@ -1,3 +1,9 @@
+/*
+ * Progammieren 2 Übung 1
+ * Autoren: Stephan Schmidt, Cedric Groß
+ * 27.04.2021
+ */
+
 #include <iostream>
 #include "Artikel.h"
 

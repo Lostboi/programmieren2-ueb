@@ -1,7 +1,7 @@
 /*
  * Progammieren 2 Übung 1
- * Autoren: Tim Nimsgern, Marcel Splettstößer
- * 28.04.2021
+ * Autoren: Stephan Schmidt, Cedric Groß
+ * 27.04.2021
  */
 #include <iostream>
 #include <string>
@@ -48,8 +48,8 @@ void start() {
     FunktionsTyp funktion;
 
 
-    Artikel artikel1{1, "Milch", 50};   // Feste initilisierung von Objekten
-    Artikel artikel2{2, "Butter"};
+    Artikel artikel1 = {1, "Milch", 50};   // Feste initilisierung von Objekten
+    Artikel artikel2 = {2, "Butter"};
 
     int menge;
     string bezeichnung;
@@ -96,13 +96,13 @@ void start() {
  */
 void artikelTest() {
     try {
-        Artikel artikel1 {4, "Erdbeeren", 10};
+        Artikel artikel1 = {4, "Erdbeeren", 10};
         print(artikel1);
         artikel1.bucheZugang(150);
         print(artikel1);
         artikel1.bucheAbgang(150);
         print(artikel1);
-        Artikel artikel2{3, "Milch"};
+        Artikel artikel2 = {3, "Milch"};
         print(artikel2);
         artikel1.setbezeichnung("Spaetzle");
         print(artikel1);
