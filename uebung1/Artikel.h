@@ -1,37 +1,20 @@
+#include <iostream>
+using namespace std;
 class Artikel{
 public:
     int artikelNr;
     string bezeichnung;
     int bestand;
 
-    int getartikelNr() const{
-        return artikelNr;
-    };
-    string getbezeichnung() const{
-        return bezeichnung;
-    };
+    int getartikelNr() const;
 
-    int getbestand() const{
-        return bestand;
-    };
+    string getbezeichnung() const;
 
-    void setartikelNr(int nummer){
-        this ->artikelNr = nummer;
-    };
+    int getbestand() const;
 
-    void setbezeichnung(string bez){
-        this ->bezeichnung = bez;
-    };
+    void setbezeichnung(string bez);
 
-    void setbestand(int nummer){
-        this ->bestand = nummer;
-    };
+    void bucheZugang (int menge);
 
-    void bucheZugang (int menge){
-        this ->bestand = bestand + menge;
-    };
-
-    void bucheAbgang (int menge) {
-        this ->bestand = bestand - menge;
-    };
+    void bucheAbgang (int menge);
 };
