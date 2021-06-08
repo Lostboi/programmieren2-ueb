@@ -1,0 +1,3 @@
+article.o: article.cpp article.h check.h
+lager.o: lager.cpp lager.h article.h check.h
+lagerDialog.o: lagerDialog.cpp lagerDialog.h lager.h article.h
